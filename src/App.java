@@ -30,6 +30,8 @@ public class App {
         //}
 
 
+        long startTimeSecuencial = System.nanoTime();
+        long finishTiemSecuencial = System.nanoTime();
         int resultado = mB.busquedaSecuencial(arreglo, 50418);
 
         if (resultado != -1){
@@ -37,6 +39,7 @@ public class App {
         } else {
             System.out.println("Valor no encontrado :/");
         }
+        System.out.println("Tiempo de ejecucion en nanosegundos es: " + (finishTiemSecuencial - startTimeSecuencial));
         
         System.out.println(" ");
 
